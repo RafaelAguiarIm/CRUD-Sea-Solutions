@@ -60,5 +60,3 @@ Além desses métodos, foi implementado tambem, os métodos para finalizar uma T
 3. Configure o banco de dados MySQL em sua máquina e atualize as configurações do arquivo `application.properties` com as informações de conexão do seu banco de dados
 4. Acesse a aplicação em seu navegador através do endereço `http://localhost:8080` e informe os endpoints de acordo com o comentado na classe Controller
 
-## Contribuição
-Este projeto foi desenvolvido por Rafael Aguiar. Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um fork do repositório e submeter um pull request com suas alterações. Será um prazer receber contribuições da comunidade!
