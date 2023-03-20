@@ -21,7 +21,7 @@ Além desses métodos, foi implementado tambem, os métodos para finalizar uma T
 - `Validações`: Validações das tasks inseridas, se já existem no banco de dados, se a task finalizada está OK dentre outras validações
 - `Finalização da Task`: Ao finalizar a task, o status muda para True, e o atributo finalDate captura a data e hora que a task foi finalizada
 - `Exceções`: ResourceExceptionHandler para ter um maior controle das exceções, StandartError apra deixar o stack mais visualmente mais agradável entre outras
-- `Perfis de desenvolvimento`: Sendo o perfil de Test e o perfil Dev, ambos configurados no aplicatiom.properties
+- `Perfis de desenvolvimento`: Sendo o perfil de Test (Usado com H2) e o perfil Dev (Usado com MySql), ambos configurados no aplicatiom.properties
 
 <hr>
 
