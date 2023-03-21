@@ -8,22 +8,22 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-//@Configuration
-//@Profile("dev")
+@Configuration
+@Profile("dev")
 public class DevConfig {
-//    @Autowired
-//    private DBServices dbServices;
-//
-//    @Value("${spring.jpa.hibernate.ddl-auto}")
-//    private String value;
-//
-//    @Bean
-//    public Boolean instaciaDB(){
-//        if (value.equals("create")){
-//            this.dbServices.instanciaDB();
-//        }
-//        return false;
-//    }
+    @Autowired
+    private DBServices dbServices;
+
+    @Value("${spring.jpa.hibernate.ddl-auto}")
+    private String value;
+
+    @Bean
+    public Boolean instaciaDB(){
+        if (value.equals("create")){
+            this.dbServices.instanciaDB();
+        }
+        return false;
+    }
 
 
 }
