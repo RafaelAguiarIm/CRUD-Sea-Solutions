@@ -1,5 +1,5 @@
 
-# Sistema de Gestão Clínica - Instituto Metamorfose
+# API Rest - CRUD Sea Solutions
 Este projeto consiste na implementação completa do sistema de gerenciamento do Instituto Metamorfose. Sendo ele implementado uma parte no repositório público, e o restante dos módulos estaram no repositório privado.
 
 
@@ -24,6 +24,25 @@ Além desses métodos, foi implementado tambem, os métodos para finalizar uma T
 - `Perfis de desenvolvimento`: Sendo o perfil de Test (Usado com H2) e o perfil Dev (Usado com MySql), ambos configurados no aplicatiom.properties
 
 <hr>
+
+### Os Endpoints criados foram: (Rotas locais)
+-   `Método POST save():` localhost:8080/tasks
+-   `Método GET listAll():` localhost:8080/tasks/listAll
+-   `Método GET listAllTrue():` localhost:8080/tasks/true
+-   `Método GET listAllFalse():` localhost:8080/tasks
+-   `Método GET findById():` localhost:8080/tasks/{id}
+-   `Método DELETE delete():` localhost:8080/tasks/delete/{id}
+-   `Método PUT udpate():` localhost:8080/tasks/5
+-   `Método PUT finalize():` localhost:8080/tasks/finalize/{id}
+
+
+### Exemplo de uma chamada POST para o método save() ou PUT para o método finalize()
+```json
+{
+	"name": "Tarefa 01",
+	"description": "Descrição da Tarefa"
+}
+```
 
 
 ### Tecnologias utilizadas
